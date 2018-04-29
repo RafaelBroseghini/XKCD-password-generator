@@ -19,17 +19,15 @@ def processform():
     else:
         all_words = read_file("words.txt")
 
-    min_length = request.args.get("min_length")
-    max_length = request.args.get("max_length")
+    min_length = int(request.args.get("min_length"))
+    max_length = int(request.args.get("max_length"))
     num_sub = request.args.get("num_sub")
-    min_word_length = request.args.get("min_word_length")
-    max_word_length = request.args.get("max_word_length")
-    all_pswds = generate_pswds(all_words,int(min_length),int(max_length),int(min_word_length), int(max_word_length), 4,80)
+    min_word_length = int(request.args.get("min_word_length"))
+    max_word_length = int(request.args.get("max_word_length"))
+    all_pswds = generate_pswds(all_words, min_length, max_length, min_word_length,  max_word_length, 4)
 
     if num_sub == "on":
         all_pswds = number_substitution(all_pswds)
-
-    all_pswds = check_passwords(all_pswds)
 
     return render_template("list.html.j2", pswds=all_pswds)
 

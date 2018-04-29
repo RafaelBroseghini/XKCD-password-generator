@@ -7,7 +7,7 @@ easy_typing = {'a': -1, 'b': 1, 'c': -1, 'd': -1, 'e': -1, 'f': -1, 'g': 0, 'h':
                'w': -1,'x': -1, 'y': 1, 'z': -1, "1":-1, "2":-1 ,"3":-1, "4":-1, "5":-1, "6":1, "7":1, "8":1,
                "9":1, "0":1, "!":-1}
 
-def read_file  (filename):
+def read_file(filename):
     words_dict = {}
     with open(filename, "r") as filein:
         line = list(filein)
@@ -35,17 +35,21 @@ def type_easy(not_easy_dict):
 
     return easy_dict
 
-
-def generate_pswds(words, minl, maxl, minwl, maxwl, words_p_pwd, pswds_qty):
+def generate_possible_words(words, maxwl, minwl):
     possible_words = {}
-    used_words = {}
     for word in words:
         if words[word]["len"] >= minwl and words[word]["len"] <= maxwl:
             possible_words[word] = len(word)
+    return possible_words
 
-
+def generate_pswds(words, minl, maxl, minwl, maxwl, words_p_pwd):
+    possible_words = generate_possible_words(words, maxwl, minwl)
+    used_words = {}
     all_pswd = []
-    for i in range(pswds_qty):
+
+    number_of_passwords = 0
+    tries = 0
+    while number_of_passwords < 10 and tries < 100:
         pswd = ""
         a_pswd = []
         current_word_size = maxl
@@ -61,8 +65,18 @@ def generate_pswds(words, minl, maxl, minwl, maxwl, words_p_pwd, pswds_qty):
                     pswd += word
                     a_pswd.append(word)
                     current_word_size = current_word_size - possible_words[word]
-        all_pswd.append(a_pswd)
+
+        if len(a_pswd) == 4:
+            all_pswd.append(a_pswd)
+            pswd = ""
+            current_word_size = maxl
+            number_of_passwords += 1
+        tries += 1
+        
+    print(tries)
     return all_pswd
+
+
 
 def number_substitution(lst):
     for i in range(len(lst)):
@@ -74,13 +88,3 @@ def number_substitution(lst):
             lst[i][j] = "".join(lst[i][j])
 
     return lst
-
-def check_passwords(lst):
-    newlist = []
-    j = 0
-    for i in range(len(lst)):
-        if len(lst[i]) == 4 and j < 10:
-            newlist.append(lst[i])
-            j += 1
-
-    return newlist
