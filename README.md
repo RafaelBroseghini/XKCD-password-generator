@@ -38,6 +38,9 @@ the keyboards "envenly" spread out with maximum deviation of ONE.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :+1:
 
+## Future Work
+
+1. Implement password generation for other languages.
 
 ### XKCD Explained Best:
 ![alt text](static/img/password.png)
