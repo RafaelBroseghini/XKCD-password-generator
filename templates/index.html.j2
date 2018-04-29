@@ -1,0 +1,92 @@
+{% extends "bootstrap/base.html" %}
+
+{% block styles%}
+  {{super()}}
+  <link rel="stylesheet" href="/static/css/style.css">
+{% endblock %}
+
+{% block content %}
+<section id="main">
+
+
+<div class="container ">
+  <h1>XKCD Password Generator</h1>
+  <div class="jumbotron">
+
+  <form action="/processform" method="get">
+    <div class="row">
+    <div class="col-md-4">
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="min_length">Minimum Password Length:</label>
+        <select id = "min_length" name="min_length" class="form-control">
+          <option value="10">Choose:</option>
+          <option value="10">10</option>
+          <option value="12">12</option>
+          <option value="14">14</option>
+          <option value="16">16</option>
+          <option value="20">20</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="max_length">Maximum Password Length:</label>
+        <select id = "max_length" name="max_length" class="form-control">
+          <option value="20">Choose:</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="min_word_length">Minimum Word Length:</label>
+        <select id = "min_word_length" name="min_word_length" class="form-control">
+          <option value="3">Choose:</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="max_word_length">Maximum Word Length:</label>
+        <select id = "max_word_length" name="max_word_length" class="form-control">
+          <option value="7">Choose</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-12">
+        <label for="num_sub">Number substitution:</label>
+        <input type="checkbox" name="num_sub">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="easy_typing">Easy typing:</label>
+        <input type="checkbox" name="easy_typing">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Password!</button>
+  </div>
+  <div class="col-md-8">
+      <img src="/static/img/password.png" class="img-thumbnail" alt="Responsive image">
+  </div>
+  </div>
+    <div class="form-group">
+    </div>
+  </form>
+</div>
+</div>
+</section>
+
+{% endblock %}
