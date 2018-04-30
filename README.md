@@ -2,17 +2,17 @@
 
 Flask application inspired by Web comic [XKCD 936](https://xkcd.com/936/ "xkcd's pass gen").
 
-### Features:
+## Features:
  * *Number Substitution*
  * *Easy Typing*
 
-#### Number Substitution
+### Number Substitution
 
 Number Substitution allows user to request that letters get swapped by number or
 symbols. The python dictionary below is used for number substitution:
   * {"e" : "3","s" : "5","b" : "8","o" : "0","i" : "!"}
 
-#### Easy Typing
+### Easy Typing
 Easy typing rules are based on easiness keyboard strokes by having keys from both sides of
 the keyboards "envenly" spread out with maximum deviation of ONE.
   * *Implementation:*
@@ -21,7 +21,7 @@ the keyboards "envenly" spread out with maximum deviation of ONE.
     * As each password is read the program keeps track of overall score
       and returns it if score is *one, zero, or minus one.*
 
-#### Language Support:
+### Language Support:
   * *English* :uk:
   * *French* :fr:
   * *Italian* :it:
