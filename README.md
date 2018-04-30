@@ -1,4 +1,4 @@
-# XKCD Password Generator
+# XKCD Password Generator :closed_lock_with_key:
 
 Flask application inspired by Web comic [XKCD 936](https://xkcd.com/936/ "xkcd's pass gen").
 
@@ -21,13 +21,20 @@ the keyboards "envenly" spread out with maximum deviation of ONE.
     * As each password is read the program keeps track of overall score
       and returns it if score is *one, zero, or minus one.*
 
+#### Language Support:
+  * *English*
+  * *French*
+  * *Italian*
+  * *Spanish*
+  * *Star Wars*
+
 ## Install & Usage
 * *From the command line:*
 * `git clone git@github.com:RafaelBroseghini/XKCD-password-generator.git`
 * `cd XKCD-password-generator`
 * `python3 app.py`
 
-## Modifications
+## Modifications :hammer:
   * Modify password.py as desired to implement new password features or improve current ones.
 
 ## Contributing
@@ -37,10 +44,6 @@ the keyboards "envenly" spread out with maximum deviation of ONE.
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :+1:
-
-## Future Work
-
-1. Implement password generation for other languages.
 
 ### XKCD Explained Best:
 ![alt text](static/img/password.png)
