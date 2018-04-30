@@ -12,12 +12,13 @@ def index():
 @app.route("/processform")
 def processform():
     easy_typing = request.args.get("easy_typing")
+    language = request.args.get("language")
 
     if easy_typing == "on":
-        all_words = read_file("words.txt")
+        all_words = read_file(language)
         all_words = type_easy(all_words)
     else:
-        all_words = read_file("words.txt")
+        all_words = read_file(language)
 
     min_length = int(request.args.get("min_length"))
     max_length = int(request.args.get("max_length"))
