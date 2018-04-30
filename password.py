@@ -10,10 +10,10 @@ easy_typing = {'a': -1, 'b': 1, 'c': -1, 'd': -1, 'e': -1, 'f': -1, 'g': 0, 'h':
 def read_file(filename):
     words_dict = {}
     with open(filename, "r") as filein:
-        line = list(filein)
-    random.shuffle(line)
+        all_words = list(filein)
+    random.shuffle(all_words)
 
-    for word in line:
+    for word in all_words:
         word = word.strip("\n")
         if word not in words_dict:
             words_dict[word] = {"len":len(word),"easy":"no"}
@@ -66,7 +66,7 @@ def generate_pswds(words, minl, maxl, minwl, maxwl, words_p_pwd):
                     a_pswd.append(word.lower())
                     current_word_size = current_word_size - possible_words[word]
 
-        if len(a_pswd) == 4:
+        if len(a_pswd) == 4 and len("".join(a_pswd)) >= minl and len("".join(a_pswd)) <= maxl:
             all_pswd.append(a_pswd)
             pswd = ""
             current_word_size = maxl
