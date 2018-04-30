@@ -15,10 +15,10 @@ def processform():
     language = request.args.get("language")
 
     if easy_typing == "on":
-        all_words = read_file(language)
+        all_words = read_file("static/languages/"+language)
         all_words = type_easy(all_words)
     else:
-        all_words = read_file(language)
+        all_words = read_file("static/languages/"+language)
 
     min_length = int(request.args.get("min_length"))
     max_length = int(request.args.get("max_length"))
