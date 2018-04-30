@@ -9,7 +9,9 @@
 {% block content %}
 <section id="main">
 
-
+<div class="row">
+  <div class="col-md-2">
+  </div>
 <div class="container ">
   <h1>XKCD Password Generator</h1>
   <div class="jumbotron grad">
@@ -33,13 +35,13 @@
       <div class="form-group col-md-12">
         <label for="max_length">Maximum Password Length:</label>
         <select id = "max_length" name="max_length" class="form-control" required>
-          <option value="20">Choose:</option>
-          <option value="20">20</option>
-          <option value="21">21</option>
-          <option value="22">22</option>
-          <option value="23">23</option>
-          <option value="24">24</option>
-          <option value="25">25</option>
+          <option value="25">Choose:</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+
         </select>
       </div>
     </div>
@@ -72,9 +74,10 @@
         <select id = "language" name="language" class="form-control" required>
           <option value="">Choose:</option>
           <option value="english.txt">English</option>
-          <option value="spanish.txt">Spanish</option>
           <option value="french.txt">French</option>
           <option value="italian.txt">Italian</option>
+          <option value="spanish.txt">Spanish</option>
+          <option value="starwars.txt">Star Wars</option>
         </select>
       </div>
     </div>
@@ -97,6 +100,9 @@
     <div class="form-group">
     </div>
   </form>
+</div>
+</div>
+<div class="col-md-2">
 </div>
 </div>
 </section>

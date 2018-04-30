@@ -49,7 +49,7 @@ def generate_pswds(words, minl, maxl, minwl, maxwl, words_p_pwd):
 
     number_of_passwords = 0
     tries = 0
-    while number_of_passwords < 10 and tries < 100:
+    while number_of_passwords < 10 and tries < 50:
         pswd = ""
         a_pswd = []
         current_word_size = maxl
@@ -57,13 +57,13 @@ def generate_pswds(words, minl, maxl, minwl, maxwl, words_p_pwd):
             if len(pswd)+possible_words[word] < minl and word not in used_words and len(a_pswd) < words_p_pwd:
                 used_words[word] = "USED"
                 pswd += word
-                a_pswd.append(word)
+                a_pswd.append(word.lower())
                 current_word_size = current_word_size - possible_words[word]
             else:
                 if possible_words[word] < current_word_size and word not in used_words and len(a_pswd) < words_p_pwd:
                     used_words[word] = "USED"
                     pswd += word
-                    a_pswd.append(word)
+                    a_pswd.append(word.lower())
                     current_word_size = current_word_size - possible_words[word]
 
         if len(a_pswd) == 4:
@@ -72,8 +72,8 @@ def generate_pswds(words, minl, maxl, minwl, maxwl, words_p_pwd):
             current_word_size = maxl
             number_of_passwords += 1
         tries += 1
-        
-    print(tries)
+
+    print("Generated 10 passwords in: {} tries.".format(tries))
     return all_pswd
 
 
