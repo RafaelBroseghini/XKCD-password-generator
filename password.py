@@ -11,7 +11,7 @@ def read_file(filename):
     words_dict = {}
     with open(filename, "r") as filein:
         all_words = list(filein)
-    random.shuffle(all_words)
+    random.shuffle(all_words) 
 
     for word in all_words:
         word = word.strip("\n")
