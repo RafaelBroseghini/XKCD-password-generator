@@ -3,6 +3,7 @@
 {% block styles%}
   {{super()}}
   <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/lib/animate/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 {% endblock %}
 
@@ -12,8 +13,8 @@
 <div class="row">
   <div class="col-md-2">
   </div>
-<div class="container ">
-  <h1>XKCD Password Generator</h1>
+<div class="container animated pulse">
+  <h1 class="animated bounceInDown">XKCD Password Generator</h1>
   <div class="jumbotron grad">
 
   <form action="/processform" method="get">
@@ -77,6 +78,7 @@
           <option value="french.txt">French</option>
           <option value="italian.txt">Italian</option>
           <option value="spanish.txt">Spanish</option>
+          <option value="multilingual.txt">Multilingual</option>
           <option value="starwars.txt">Star Wars</option>
         </select>
       </div>

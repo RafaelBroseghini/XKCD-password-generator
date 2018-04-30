@@ -3,6 +3,7 @@
 {% block styles%}
   {{super()}}
   <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/lib/animate/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 {% endblock %}
 
@@ -14,7 +15,8 @@
   <div class="col-md-2">
     <div class="container head">
       <p>HACK ALERT: This Password Generator application works
-         fairly well up until passwords of minimum length = 50.
+         fairly well up until passwords of minimum length = 50 &
+         maximum length <= 200.
          Play with the query string !
        </p>
       <p>Click on the Yellow button to refresh the table with the
@@ -26,7 +28,7 @@
   <div class="container head">
     <div class="jumbotron">
       <div class="container">
-        <h1>{{pswds|length}} custom "XKCD" like passwords!</h1>
+        <h1 class="animated flash">{{pswds|length}} custom "XKCD" like passwords!</h1>
       </div>
       <table class="table table-bordered">
         <thead>
@@ -53,11 +55,11 @@
     </div>
     <div class="row">
       <div class="col-md-6">
-        <button type="button" name="" onclick="refresh()" class="btn btn-warning btn-lg btn-block">Refresh these passwords!</button>
+        <button type="button" name="" onclick="refresh()" class="btn btn-warning btn-lg btn-block animated fadeInLeftBig">Refresh these passwords!</button>
       </div>
       <div class="col-md-6">
         <form class="" action="/" method="get">
-          <button type="submit" name="" class="btn btn-primary btn-lg btn-block">I want to change the password sizes!</button>
+          <button type="submit" name="" class="btn btn-primary btn-lg btn-block animated fadeInRightBig">I want to change the password sizes!</button>
         </form>
       </div>
     </div>
