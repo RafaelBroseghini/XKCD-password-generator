@@ -14,7 +14,7 @@ symbols. The python dictionary below is used for number substitution:
 
 ### Easy Typing
 Easy typing rules are based on easiness keyboard strokes by having keys from both sides of
-the keyboards "envenly" spread out with maximum deviation of ONE.
+the keyboards "evenly" spread out with maximum deviation of ONE.
   * *Implementation:*
     * Keys on right side of keyboard receive the score of one.
     * Keys on left side of keyboard receive the score of minus one.
