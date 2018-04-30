@@ -10,7 +10,7 @@ Flask application inspired by Web comic [XKCD 936](https://xkcd.com/936/ "xkcd's
 
 Number Substitution allows user to request that letters get swapped by numbers/
 symbols. The python dictionary below is used for number substitution:
-  * {"e" : "3","s" : "5","b" : "8","o" : "0","i" : "!"}
+  * `{"e" : "3","s" : "5","b" : "8","o" : "0","i" : "!"}`
 
 ### Easy Typing
 Easy typing rules are based on easiness keyboard strokes by having keys from both sides of
