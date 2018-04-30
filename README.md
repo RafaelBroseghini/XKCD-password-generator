@@ -22,11 +22,11 @@ the keyboards "envenly" spread out with maximum deviation of ONE.
       and returns it if score is *one, zero, or minus one.*
 
 #### Language Support:
-  * *English*
-  * *French*
-  * *Italian*
-  * *Spanish*
-  * *Star Wars*
+  * *English* :uk:
+  * *French* :fr:
+  * *Italian* :it:
+  * *Spanish* :es:
+  * *Star Wars* :space_invader:
 
 ## Install & Usage
 * *From the command line:*
