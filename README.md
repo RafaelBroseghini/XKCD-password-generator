@@ -41,6 +41,9 @@ the keyboards "evenly" spread out with maximum deviation of ONE.
 ## Modifications :hammer:
   * Modify password.py as desired to implement new password features or improve current ones.
 
+## Future Work
+  * Copy to clipboard plugin.
+
 ## Contributing
 
 1. Fork it!
