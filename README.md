@@ -2,8 +2,8 @@
 
 * Flask application inspired by Web comic [XKCD 936](https://xkcd.com/936/ "xkcd's pass gen").
 * Hosted on:
-  * http://tortellinibroseghini.pythonanywhere.com/
-  * https://xkcd-pass-gen.herokuapp.com/
+  * [Python Anywhere](http://tortellinibroseghini.pythonanywhere.com/) -> *Active*
+  * [Heroku](https://xkcd-pass-gen.herokuapp.com/) -> *Not Active*
 
 ## Features:
  * *Number Substitution*
@@ -40,9 +40,6 @@ the keyboards "evenly" spread out with maximum deviation of ONE.
 
 ## Modifications :hammer:
   * Modify password.py as desired to implement new password features or improve current ones.
-
-## Future Work
-  * Copy to clipboard plugin.
 
 ## Contributing
 
