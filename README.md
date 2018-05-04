@@ -8,6 +8,7 @@
 ## Features:
  * *Number Substitution*
  * *Easy Typing*
+ * *Copy to Clipboard Plugin*
 
 ### Number Substitution
 
