@@ -52,5 +52,5 @@ the keyboards "evenly" spread out with maximum deviation of ONE.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :+1:
 
-### XKCD Explained Best:
+# XKCD Explained Best:
 ![alt text](static/img/password.png)
