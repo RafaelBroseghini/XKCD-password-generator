@@ -1,6 +1,6 @@
 # XKCD Password Generator :closed_lock_with_key:
 
-* Flask application inspired by Web comic [XKCD 936](https://xkcd.com/936/ "xkcd's pass gen").
+* Flask application inspired by Web comic [XKCD 936](#xkcd-explained-best).
 * Hosted on:
   * [Python Anywhere](http://tortellinibroseghini.pythonanywhere.com/) -> *Active*
   * [Heroku](https://xkcd-pass-gen.herokuapp.com/) -> *Not Active*
