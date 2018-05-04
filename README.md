@@ -10,13 +10,13 @@
  * *Easy Typing*
  * *Copy to Clipboard Plugin*
 
-### Number Substitution
+## Number Substitution
 
 Number Substitution allows user to request that letters get swapped by numbers/
 symbols. The python dictionary below is used for number substitution:
   * `{"e" : "3","s" : "5","b" : "8","o" : "0","i" : "!"}`
 
-### Easy Typing
+## Easy Typing
 Easy typing rules are based on easiness keyboard strokes by having keys from both sides of
 the keyboards "evenly" spread out with maximum deviation of ONE.
   * *Implementation:*
@@ -25,7 +25,7 @@ the keyboards "evenly" spread out with maximum deviation of ONE.
     * As each password is read the program keeps track of overall score
       and returns it if score is *one, zero, or minus one.*
 
-### Language Support:
+## Language Support:
   * *English* :uk:
   * *French* :fr:
   * *Italian* :it:
@@ -50,5 +50,5 @@ the keyboards "evenly" spread out with maximum deviation of ONE.
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :+1:
 
-### XKCD Explained Best:
+# XKCD Explained Best:
 ![alt text](static/img/password.png)
