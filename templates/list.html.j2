@@ -4,13 +4,12 @@
   {{super()}}
   <link rel="stylesheet" href="/static/css/style.css">
   <link rel="stylesheet" href="/static/css/lib/animate/animate.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
 <section id="main">
-
-
 <div class="row">
   <div class="col-md-2">
     <div class="container head">
@@ -34,20 +33,24 @@
         <thead>
           <tr>
             <th scope="col">#</th>
-            <th scope="col">X</th>
-            <th scope="col">K</th>
-            <th scope="col">C</th>
-            <th scope="col">D</th>
+            <th scope="col">Password!</th>
+            <th scope="col">Copy!</th>
           </tr>
         </thead>
         <tbody>
           {% for i in range(0,pswds|length) %}
           <tr>
             <th scope="row">{{i+1}}</th>
-            <td>{{pswds[i][0]}}</td>
-            <td>{{pswds[i][1]}}</td>
-            <td>{{pswds[i][2]}}</td>
-            <td>{{pswds[i][3]}}</td>
+            <td>
+              <div class="input-group input-group-lg">
+                <input id="data{{i+1}}" type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm" value="{{pswds[i][0]}} {{pswds[i][1]}} {{pswds[i][2]}} {{pswds[i][3]}}">
+              </div>
+            </td>
+            <td class="smaller-td">
+              <button class="btn btn2" data-clipboard-target="#data{{i+1}}">
+                  <i class="far fa-copy"></i>
+              </button>
+            </td>
           </tr>
           {% endfor %}
         </tbody>
@@ -75,5 +78,6 @@
 
 {% block scripts %}
   {{ super() }}
+  <script type="text/javascript" src="/static/js/lib/clipboard/clipboard.min.js"></script>
   <script type="text/javascript" src="/static/js/main.js"></script>
 {% endblock %}

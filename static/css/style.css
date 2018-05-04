@@ -11,6 +11,11 @@ label {
   font-family: 'Orbitron', sans-serif;
 }
 
+
+.smaller-td {
+  width: 20px;
+}
+
 .grad {
   background: #0f0c29;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
