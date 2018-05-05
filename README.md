@@ -30,7 +30,8 @@ the keyboards "evenly" spread out with maximum deviation of ONE.
   * *French* :fr:
   * *Italian* :it:
   * *Spanish* :es:
-  * *Multilingual* :uk: :fr: :it: :es:
+  * *Portuguese* 🇧🇷
+  * *Multilingual* :uk: :fr: :it: :es: 🇧🇷
   * *Star Wars* :space_invader:
 
 ## Install & Usage
