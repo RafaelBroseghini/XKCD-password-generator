@@ -42,6 +42,9 @@ the keyboards "evenly" spread out with maximum deviation of ONE.
 ## Modifications :hammer:
   * Modify password.py as desired to implement new password features or improve current ones.
 
+## Future Work/Current Mods
+  * Copy to clipboard plugin. (Current) -> [Check it out](https://github.com/RafaelBroseghini/XKCD-password-generator/tree/clipboard_plugin)
+
 ## Contributing
 
 1. Fork it!
