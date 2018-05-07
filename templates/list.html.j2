@@ -2,10 +2,10 @@
 
 {% block styles%}
   {{super()}}
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
   <link rel="stylesheet" href="/static/css/style.css">
   <link rel="stylesheet" href="/static/css/lib/animate/animate.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 {% endblock %}
 
 {% block content %}
@@ -47,7 +47,7 @@
               </div>
             </td>
             <td class="smaller-td">
-              <button class="btn btn2" data-clipboard-target="#data{{i+1}}">
+              <button class="btn btn2" data-clipboard-target="#data{{i+1}}" data-toggle="popover" data-content="Copied!">
                   <i class="far fa-copy"></i>
               </button>
             </td>
@@ -78,6 +78,7 @@
 
 {% block scripts %}
   {{ super() }}
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script type="text/javascript" src="/static/js/lib/clipboard/clipboard.min.js"></script>
   <script type="text/javascript" src="/static/js/main.js"></script>
 {% endblock %}
