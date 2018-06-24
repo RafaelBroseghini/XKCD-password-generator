@@ -1,3 +1,4 @@
+<a href="http://example.com/" target="_blank">Hello, world!</a>
 # XKCD Password Generator :closed_lock_with_key:
 
 * Flask application inspired by Web comic [XKCD 936](#xkcd-explained-best).
