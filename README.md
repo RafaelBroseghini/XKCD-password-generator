@@ -2,7 +2,7 @@
 
 * Flask application inspired by Web comic [XKCD 936](#xkcd-explained-best).
 * Hosted on:
-  * [Python Anywhere](http://tortellinibroseghini.pythonanywhere.com/) -> *Active*
+  * [Python Anywhere](http://tortellinibroseghini.pythonanywhere.com/) -> *Not Active*
   * [Heroku](https://xkcd-pass-gen.herokuapp.com/) -> *Not Active*
 
 ## Features:
