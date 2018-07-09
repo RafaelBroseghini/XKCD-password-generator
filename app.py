@@ -1,4 +1,4 @@
-from flask import Flask, Response, request, render_template
+from flask import Flask, request, render_template
 from flask_bootstrap import Bootstrap
 from password import *
 
